@@ -13,7 +13,7 @@ import numpy as np
 labels = ["0.01", "0.1", "1", "10"]
 filesize = 1000000 #bit
 upswitch = np.array((1, 7, 53, 342)) / filesize * 1000000
-downswitch = np.array((1, 5, 46, 310)) / filesize * 1000000
+downswitch = np.array((1, 5, 46, 240)) / filesize * 1000000
 width = 0.6
 
 
@@ -34,5 +34,5 @@ ax.text(0.5, 0.5, 'mockup data', transform=ax.transAxes,
         fontsize=20, color='gray', alpha=0.5,
         ha='center', va='center')
 
-plt.savefig("result-simulation-1.pdf")
+plt.savefig("mockup_plot.pdf")
 plt.show()
